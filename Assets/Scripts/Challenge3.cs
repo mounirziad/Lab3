@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class Challenge3 : MonoBehaviour
 {
-    public int useramount;
+    public int useramount; //User input amount in which they will be paid 
 
-    private int amtofhundreds;
+    private int amtofhundreds; //amount of hundreds user will be paid 
 
-    private int amtoffiftys;
+    private int amtoffiftys; //amount of fiftys user will be paid 
 
-    private int amtoftwents;
+    private int amtoftwents; //amount of twentys user will be paid
 
-    private int amtoftens;
+    private int amtoftens; //amount of tens user will be paid 
 
-    private int amtoffifves;
+    private int amtoffifves; //amount of fives user will be paid
 
-    private int amtofones;
+    private int amtofones; //amount of ones user will be paid
 
     //defining variables. useramount will be the amount the user has to pay. amtofhundreds, etc. is the amount of bills
 

@@ -8,23 +8,24 @@ public class Challenge2 : MonoBehaviour
 
 
 
-    public float priceofbook;
+    public float priceofbook; //define price of book to be input by user
 
-    private float discount = (1 - 0.40f);
+    private float discount = (1 - 0.40f); //define discount to be used in rev and profit calculation
 
-    public float amountofbookssold;
+    public float amountofbookssold; //define amountofbookssold to be input by user
 
-    public float amountofbooksbought;
+    public float amountofbooksbought; //define amount of booksbought to be input by user. 
 
-    private float discountedpriceofbook;
+    private float discountedpriceofbook; //define discounted priceofbook for profit calculation
 
-    private float wholesalecost;
+    private float wholesalecost; //define wholesalecost for profit calculation
 
-    private float revenue;
+    private float revenue; //define revenue for profit calculation
 
-    private float profit;
+    private float profit; //define profit. 
 
-    //defining variables 
+    //defining variables for profit calculation.
+    
 
 
     // Start is called before the first frame update

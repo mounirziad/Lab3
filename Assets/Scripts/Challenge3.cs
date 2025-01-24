@@ -18,7 +18,7 @@ public class Challenge3 : MonoBehaviour
 
     private int amtofones;
 
-
+    //defining variables. useramount will be the amount the user has to pay. amtofhundreds, etc. is the amount of bills
 
 
     // Start is called before the first frame update
@@ -36,7 +36,8 @@ public class Challenge3 : MonoBehaviour
                 useramount = 0;
                 
             }
-
+            //if the useramount has a remainder after being divided by that remainder. set the remainder equal to the useramount and calculate the number of hundred dollar bills and save this into amtofhundreds
+            //if there isn't a remainder. set the useramount = 0 to avoid wrong calculations. calculate the number of hundred dollar bills and save this into amtofhundreds
             if (useramount % 50 != 0)
             {
                 amtoffiftys = useramount / 50;
@@ -48,8 +49,9 @@ public class Challenge3 : MonoBehaviour
                 amtoffiftys = useramount / 50;
                 useramount = 0;
             }
-
-            if (useramount % 20 != 0)
+          //if the useramount has a remainder after being divided by that remainder. set the remainder equal to the useramount and calculate the number of fifty dollar bills and save this into amtoffiftys
+          //if there isn't a remainder. set the useramount = 0 to avoid wrong calculations. calculate the number of hundred dollar bills and save this into amtoffiftys
+           if (useramount % 20 != 0)
             {
                 amtoftwents = useramount / 20;
                 useramount %= 20;
@@ -60,8 +62,9 @@ public class Challenge3 : MonoBehaviour
                 amtoftwents = useramount / 20;
                 useramount = 0;
             }
-
-            if (useramount % 10 != 0)
+          //if the useramount has a remainder after being divided by that remainder. set the remainder equal to the useramount and calculate the number of twenty dollar bills and save this into amtoftwentys
+          //if there isn't a remainder. set the useramount = 0 to avoid wrong calculations. calculate the number of hundred dollar bills and save this into amtoftwentys
+           if (useramount % 10 != 0)
             {
                 amtoftens = useramount / 10;
                 useramount %= 10;
@@ -72,8 +75,9 @@ public class Challenge3 : MonoBehaviour
                 amtoftens = useramount / 10;
                 useramount = 0;
             }
-
-            if (useramount % 5 != 0)
+           //if the useramount has a remainder after being divided by that remainder. set the remainder equal to the useramount and calculate the number of tens dollar bills and save this into amtoftens
+           //if there isn't a remainder. set the useramount = 0 to avoid wrong calculations. calculate the number of hundred dollar bills and save this into amtoftens
+           if (useramount % 5 != 0)
             {
                 amtoffifves = useramount / 5;
                 useramount %= 5;
@@ -84,7 +88,9 @@ public class Challenge3 : MonoBehaviour
                 amtoffifves = useramount / 5;
                 useramount = 0;
             }
-            if (useramount % 1 != 0)
+            //if the useramount has a remainder after being divided by that remainder. set the remainder equal to the useramount and calculate the number of five dollar bills and save this into amtoffives
+            //if there isn't a remainder. set the useramount = 0 to avoid wrong calculations. calculate the number of hundred dollar bills and save this into amtoffives
+           if (useramount % 1 != 0)
             {
                 amtofones = useramount / 1;
                 useramount %= 1;
@@ -95,6 +101,8 @@ public class Challenge3 : MonoBehaviour
                 amtofones = useramount / 1;
                 useramount = 0;
             }
+           //if the useramount has a remainder after being divided by that remainder. set the remainder equal to the useramount and calculate the number of one dollar bills and save this into amtofones
+           //if there isn't a remainder. set the useramount = 0 to avoid wrong calculations. calculate the number of hundred dollar bills and save this into amtofones
 
         Debug.Log("The amount of hundreds is: ");
         Debug.Log(amtofhundreds);
@@ -108,6 +116,8 @@ public class Challenge3 : MonoBehaviour
         Debug.Log(amtoffifves);
         Debug.Log("The amount of ones is: ");
         Debug.Log(amtofones);
+
+        //display to console 
     }
 
     // Update is called once per frame
